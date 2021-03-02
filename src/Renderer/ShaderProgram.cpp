@@ -3,7 +3,7 @@
 #include <iostream>
 
 namespace Renderer {
-	ShaderProgram::ShaderProgram(const std::string vertexShader, const std::string& fragmentShader)
+	ShaderProgram::ShaderProgram(const std::string& vertexShader, const std::string& fragmentShader)
 	{
 		GLuint vertexShaderID;
 		if (!createShader(vertexShader, GL_VERTEX_SHADER, vertexShaderID)) {
